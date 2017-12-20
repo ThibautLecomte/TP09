@@ -58,30 +58,27 @@ public class MainActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
+
     }
-
-        private void adapterList(String choix)
-        {
-            switch(choix){
-                case "Europe":
-                    ArrayAdapter<String> adap = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,paysEurope);
-                    list.setAdapter(adap);
-                    break;
+    private void adapterList(String choix) {
+        switch (choix) {
+            case "Europe":
+                ArrayAdapter<String> adap = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, paysEurope);
+                list.setAdapter(adap);
+                break;
 
 
-                case "Afrique":
-                    ArrayAdapter<String> adap2 = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,paysAfrique);
-                    list.setAdapter(adap2);
-                    break;
+            case "Afrique":
+                ArrayAdapter<String> adap2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, paysAfrique);
+                list.setAdapter(adap2);
+                break;
 
 
-                case "Asie":
-                    ArrayAdapter<String> adap3 = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,paysAsie);
-                    list.setAdapter(adap3);
-                    break;
-
-            }
-
+            case "Asie":
+                ArrayAdapter<String> adap3 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, paysAsie);
+                list.setAdapter(adap3);
+                break;
         }
+    }
 
 }
